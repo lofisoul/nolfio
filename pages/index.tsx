@@ -53,7 +53,7 @@ function AboutMe() {
 }
 
 interface IPortfolio {
-  items: PortfolioItemp[];
+  items: PortfolioItem[];
 }
 
 function Portfolio({ items }: IPortfolio) {
