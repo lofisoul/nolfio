@@ -1,0 +1,16 @@
+@import "../../styles/colors";
+
+.footer {
+  background: $darkGreen;
+  color: #fff;
+  display: flex;
+  flex: 1;
+  padding: 2rem 0;
+  border-top: 10px solid $green;
+  justify-content: center;
+  align-items: center;
+
+  span {
+    margin-left: 20px;
+  }
+}

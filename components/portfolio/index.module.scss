@@ -1,0 +1,102 @@
+.card {
+  height: 100%;
+  > a {
+    display: flex;
+    background: rgba(255, 255, 255, 0.5);
+    color: #333;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease-in-out;
+    border: 1px solid #f1f1f1;
+    margin-bottom: 2rem;
+    flex-direction: row;
+    height: 100%;
+    &:hover {
+      transform: scale(1.01);
+      color: #222;
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    @media (max-width: 450px) {
+      flex-direction: column;
+    }
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    display: inline-block;
+    padding: 0.875rem 2rem;
+    background: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 5px;
+    font-size: 12px;
+    font-weight: 800;
+  }
+
+  .workImg {
+    flex: 0 0 200px;
+    align-self: stretch;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .workInfo {
+    padding: 1.5rem 3rem;
+    align-self: center;
+    p {
+      font-size: 1.4rem;
+      line-height: 1.5;
+    }
+  }
+}
+
+.grid {
+  @media (min-width: 992px) {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 1fr 1fr;
+
+    > div {
+      height: 100%;
+    }
+    .card > a {
+      flex-direction: column;
+    }
+  }
+}
+
+#githubWork {
+  background-image: url(../../public/assets/images/github.png);
+  background-size: contain;
+  background-size: 50%;
+  background-position: center;
+}
+#moodmashImg {
+  background-image: url(../../public/assets/images/moodmash.jpg);
+}
+#NBAImg {
+  background-image: url(../../public/assets/images/nbaTrivia.jpg);
+}
+
+#shiningImg {
+  background-image: url(../../public/assets/images/shiningImg.png);
+}
+#burgerImg {
+  background-image: url(../../public/assets/images/burgerTime.jpg);
+}
+
+#jamiexxImg {
+  background-image: url(../../public/assets/images/jamiexx.jpg);
+}
+#tartabullImg {
+  background-image: url(../../public/assets/images/tartabull.jpg);
+}
+#reduxAudio {
+  background-position: center top;
+  background-image: url(../../public/assets/images/reduxaudio.jpg);
+}
