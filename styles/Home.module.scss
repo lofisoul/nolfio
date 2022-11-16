@@ -130,6 +130,10 @@
   border-top: 10px solid $green;
   justify-content: center;
   align-items: center;
+
+  span {
+    margin-left: 20px;
+  }
 }
 
 .card {

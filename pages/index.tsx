@@ -53,7 +53,7 @@ function Portfolio({ items }) {
     <section className={styles.portfolio}>
       <h2>Open Source Portfolio</h2>
       <div className={styles.grid}>
-        {items.map((item) => {
+        {items.map((item: PortfolioItem) => {
           return (
             <div className={styles.card} key={item.id}>
               <a
@@ -86,7 +86,11 @@ function Footer() {
     const year = date.getFullYear();
     return year;
   }
-  return <footer className={styles.footer}>© {getYear()} Jason Nolfi</footer>;
+  return (
+    <footer className={styles.footer}>
+      © {getYear()} <span>Jason Nolfi</span>
+    </footer>
+  );
 }
 
 export default function Home() {
