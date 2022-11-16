@@ -5,7 +5,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { socialLinks, SocialLink } from "../utils/social-links";
 import { portfolioItems, PortfolioItem } from "../utils/portfolio";
 
-function SocialLinks({ socials }) {
+interface ISocialLinks {
+  socials: SocialLink[];
+}
+
+function SocialLinks({ socials }: ISocialLinks) {
   return (
     <ul className={styles.socialLinks}>
       {socials.map((social: SocialLink) => {
@@ -48,7 +52,11 @@ function AboutMe() {
   );
 }
 
-function Portfolio({ items }) {
+interface IPortfolio {
+  items: PortfolioItemp[];
+}
+
+function Portfolio({ items }: IPortfolio) {
   return (
     <section className={styles.portfolio}>
       <h2>Open Source Portfolio</h2>
