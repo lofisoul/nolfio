@@ -24,7 +24,8 @@ html {
 body {
   font-family: "Barlow", sans-serif;
   font-size: 1.8rem;
-  background: url(../public/assets/images/pw_pattern.png);
+  background: url(/assets/images/pw_pattern.png);
+  color: #222;
 }
 
 h1,
@@ -64,11 +65,11 @@ a {
 }
 
 @media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+  // html {
+  //   color-scheme: dark;
+  // }
+  // body {
+  //   color: white;
+  //   background: black;
+  // }
 }
