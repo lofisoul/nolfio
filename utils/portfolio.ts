@@ -26,7 +26,7 @@ export const portfolioItems: PortfolioItem[] = [
     url: "https://codepen.io/lofisoul/pen/GRvEzXB",
     id: "shiningImg",
     subtitle:
-      "Spooky Code pen challenge. The blood usually gets off on the second floor.",
+      "Spooky Codepen challenge. Usually, the blood gets off at the second floor.",
     tags: ["CSS"],
   },
   {
