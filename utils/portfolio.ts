@@ -12,7 +12,7 @@ export const portfolioItems: PortfolioItem[] = [
     url: "https://dreamy-curie-33497a.netlify.app/",
     id: "reduxAudio",
     subtitle: `Soundcloud app that generates a random playlist based on a user's favorites.`,
-    tags: ["react", "redux", "styled-components", "Soundcloud API"],
+    tags: ["react", "redux", "styled-components", "Soundcloud API", "OAuth"],
   },
   {
     title: "Jamie XX Album Cover",
