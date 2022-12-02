@@ -1,5 +1,6 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.scss";
+import { Strava } from "../components/strava";
 import { portfolioItems } from "../utils/portfolio";
 import { Portfolio } from "../components/portfolio";
 import { AboutMe } from "../components/about-me";
@@ -16,6 +17,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <AboutMe />
+        <Strava />
         <Portfolio items={portfolioItems} />
       </main>
 
